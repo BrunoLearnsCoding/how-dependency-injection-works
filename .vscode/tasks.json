@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/How Dependency Injection Works.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/How Dependency Injection Works.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/How Dependency Injection Works.sln"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "copy_appsettings.json",
+            "command": "copy",
+            "type": "shell",
+            "args": [
+                "${workspaceFolder}/How Dependency Injection Works/appsettings.json",
+                "${workspaceFolder}/Dependency Injection in Console/bin/Debug/net8.0/appsettings.json"
+            ]
+
+        }
+    ]
+}

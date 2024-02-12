@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+    "iisSettings": {
+      "windowsAuthentication": false,
+      "anonymousAuthentication": true,
+      "iisExpress": {
+        "applicationUrl": "http://localhost:34761",
+        "sslPort": 44303
+      }
+    },
+    "profiles": {
+      "Wonderfull-UI": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "http://localhost:8045;https://localhost:8046",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "JUST_FOR_KIDDING" : "I am laughing"
+        }
+      },
+      "Wonderfull-UI-SAD": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "http://localhost:8045;https://localhost:8046",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "JUST_FOR_KIDDING" : "I am crying"
+        }
+      },
+
+      "IIS Express": {
+        "commandName": "IISExpress",
+        "launchBrowser": true,
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+      }
+    }
+  }
